@@ -64,7 +64,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="1500/1200"
+            android:text="1200/1500"
             android:textSize="24sp" />
 
     </LinearLayout>

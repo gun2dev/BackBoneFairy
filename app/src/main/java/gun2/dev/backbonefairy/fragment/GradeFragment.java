@@ -17,7 +17,7 @@ public class GradeFragment extends Fragment {
      * rsc
      */
     View mView;
-    
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
