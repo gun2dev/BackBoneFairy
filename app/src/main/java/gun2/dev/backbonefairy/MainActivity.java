@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import io.realm.Realm;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_main);
+
+        Realm.init(getApplicationContext());
 
     }
 }

@@ -26,6 +26,7 @@ public class CountFragment extends Fragment {
      */
     private static final int TIME_LIMIT = 20;
     private int currentTime;
+    private Thread mCountStartThread;
 
     /**
      * callback
@@ -71,26 +72,57 @@ public class CountFragment extends Fragment {
     }
 
     public void start() {
-        currentTime = TIME_LIMIT;
 
-        Thread thread;
-
-        thread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-
-                    while (currentTime > 0) {
-                        Thread.sleep(1000);
-                        currentTime--;
-                        mCountViewTextView.setText(String.valueOf(currentTime));
-                        mCallback.countListener();
+        if (mCountStartThread == null){
+            mCountStartThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        while (currentTime > 0) {
+                            Thread.sleep(1000);
+                            currentTime--;
+                            getActivity().runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    mCountViewTextView.setText(String.valueOf(currentTime));
+                                    mCallback.countListener();
+                                }
+                            });
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
                 }
+            });
+        }
+
+        if (!mCountStartThread.isAlive()){
+            currentTime = TIME_LIMIT;
+            try {
+                mCountStartThread.start();
+            }catch (Exception e){
+                mCountStartThread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            while (currentTime > 0) {
+                                Thread.sleep(1000);
+                                currentTime--;
+                                getActivity().runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        mCountViewTextView.setText(String.valueOf(currentTime));
+                                        mCallback.countListener();
+                                    }
+                                });
+                            }
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                mCountStartThread.start();
             }
-        });
-        thread.start();
+        }
     }
 }

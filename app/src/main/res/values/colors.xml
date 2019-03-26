@@ -3,4 +3,13 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="forrestFairy0">#ddf2ce</color>
+    <color name="forrestFairy1">#768c54</color>
+    <color name="forrestFairy2">#334018</color>
+    <color name="forrestFairy3">#b6d96c</color>
+    <color name="forrestFairy4">#def294</color>
+
+
+
 </resources>

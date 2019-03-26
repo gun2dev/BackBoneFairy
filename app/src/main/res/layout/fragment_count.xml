@@ -10,14 +10,14 @@
         android:id="@+id/imageview_fragmentcount_bgimg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@color/colorPrimary" />
+        android:background="@color/forrestFairy0"
+        android:src="@drawable/bg_count_circle" />
 
     <TextView
         android:id="@+id/textview_fragment_countview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="TextView"
         android:textColor="@color/colorAccent"
         android:textSize="30sp" />
 </FrameLayout>
