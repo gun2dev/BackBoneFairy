@@ -8,9 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import gun2.dev.backbonefairy.R;
+import gun2.dev.backbonefairy.db.utils.RealmController;
+import io.realm.Realm;
 
 public class FairyTweenAnimFragment extends Fragment {
 
+    private static final String TAG = "FairyTweenAnimFragment";
     /**
      * rsc
      */
@@ -37,4 +40,5 @@ public class FairyTweenAnimFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
     }
+
 }
