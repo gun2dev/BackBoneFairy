@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -92,7 +94,13 @@ public class FairyFrameAnimFragment extends Fragment {
      * @param dialogue 대사
      */
     public void setDialogue(String dialogue){
-        mDialogueTextView.setText(dialogue);
+        switch (mCurrentFairy){
+            case FRAME_ANIM_BASE_FAIRY:
+                final Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.scale);
+                mDialogueTextView.startAnimation(anim);
+                mDialogueTextView.setText(dialogue);
+
+        }
     }
 
 
