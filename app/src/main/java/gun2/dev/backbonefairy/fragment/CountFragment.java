@@ -1,7 +1,6 @@
 package gun2.dev.backbonefairy.fragment;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import gun2.dev.backbonefairy.R;
-import gun2.dev.backbonefairy.test.TestActivity;
 
 public class CountFragment extends Fragment {
     private static final String TAG = "CountFragment";

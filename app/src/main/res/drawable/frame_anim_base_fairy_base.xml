@@ -2,15 +2,27 @@
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
     android:oneshot="false" >
 
-    <item android:drawable="@drawable/lotto_ball01" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball02" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball03" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball04" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball05" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball06" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball07" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball08" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball09" android:duration="210" />
-    <item android:drawable="@drawable/lotto_ball10" android:duration="210" />
+    <item android:drawable="@drawable/fairy_base_action_base_000" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_001" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_002" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_003" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_004" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_005" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_006" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_007" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_008" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_009" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_010" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_011" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_012" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_013" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_014" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_015" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_016" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_017" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_018" android:duration="50" />
+    <item android:drawable="@drawable/fairy_base_action_base_019" android:duration="50" />
+
+
 
 </animation-list>
