@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.GradeFragment">
+    tools:context=".fragment.GradeFragment"
+    android:background="@color/forrestFairy0">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:orientation="horizontal">
 
             <TextView
@@ -24,49 +25,76 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="척추레벨"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
-            <ImageView
-                android:id="@+id/imageview_fragment_grade_grade"
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@mipmap/ic_launcher" />
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageview_fragment_grade_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/forrest_fairy_point_round"
+                    android:src="@mipmap/ic_launcher"
+                    tools:src="@drawable/grade_gold" />
+
+                <TextView
+                    android:id="@+id/textview_fragmentgrade_gradename"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextViwe"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.7"
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageview_fragment_grade_wxp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                tools:src="@mipmap/ic_launcher" />
+            <ProgressBar
+                android:id="@+id/progressbar_fragment_grade_wxp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8" />
 
             <TextView
                 android:id="@+id/textview_fragment_grade_exp_rate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
+                android:gravity="center"
                 android:text="80%"
-                android:textSize="24sp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textview_fragment_grade_exp_amount"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:gravity="center"
             android:text="1200/1500"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>
